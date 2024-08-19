@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-color: #F7EFE5;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 10%;
+    top: 0;
+    left: 0;
+    background-color: #674188;
+}
+.navbar-contents {
+    display: flex;
+    gap: 35px;
+}
+.navbar-contents a {
+    text-decoration: none;
+    color: black; 
+    font-size: 22px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    font-family: "Bodoni Moda SC", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.navbar-contents a:hover {
+    color: #F7EFE5; 
+}
+
+section {
+    padding: 5% 10%;
+}
+
+#front-page {
+    background-color: #C8A1E0;
+    /* background-image: url('./images/background-purple.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; */
+    height: 100vh; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.front-page-container {
+    border: 1.5px solid #674188;
+    border-radius: 3px;
+    padding: 100px;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);
+}
+h1 {
+    font-size: 3.5rem;
+    margin: 50px 0;
+    font-weight: normal;
+    color: black;
+    font-family: "Bodoni Moda SC", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+h1 > span {
+    font-style: italic;
+}
+.montserrat-p-front-page {
+    font-size: 2rem;
+    margin-bottom: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: black;
+}
+
+.introduction-container {
+    display: flex;
+    align-items: center;
+}
+.introduction-container > img {
+    margin-left: 50px;
+}
+.introduction-text {
+    text-align: right;
+    width: 50%;
+    margin-left: auto; 
+    margin-right: 0;
+}
+.introduction-text > h2 {
+    font-size: 3rem;
+    font-family: "Bodoni Moda SC", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.introduction-text > p {
+    font-size: 1rem;
+    margin-bottom: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+.resume-button {
+    text-decoration: none;
+    background-color: #674188;
+    color: #F7EFE5;
+    padding: 15px;
+    border-radius: 18px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+.resume-button:hover {
+    color: #E2BFD9;  
+}
+hr {
+    width: 65%;
+    margin-left: auto; 
+    margin-right: auto;
+    color: #674188;
+}
+
+.projects-container {
+    display: block;
+}
+.projects-container > h2 {
+    margin-bottom: 30px;
+    font-size: 3rem;
+    font-family: "Bodoni Moda SC", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.projects-container > p {
+    font-size: 1rem;
+    margin-bottom: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+.projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 100px;
+}
+.project-img {
+    border: #674188 solid 2px;
+    border-radius: 1%;
+    transition: 0.3s ease, 0.3s ease;
+}
+.project-img:hover {
+    transform: scale(1.1); 
+    opacity: 0.8;
+}
+.project > h3 {
+    margin-top: 20px;
+    font-size: 1rem;
+    margin-bottom: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#skills {
+    background-color:#E2BFD9;
+    padding: 100px;
+}
+.skills-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills-text {
+    text-align: left;
+    width: 400px;
+    padding-left: 50px;
+}
+.skills-text > h3 {
+    margin-bottom: 30px;
+    font-size: 3rem;
+    font-family: "Bodoni Moda SC", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.skills-text > p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+.skills-table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 50px; 
+    justify-items: center;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.contract-text {
+    display: block;
+}
+.contract-text > h3 {
+    margin-bottom: 30px;
+    font-size: 3rem;
+    font-family: "Bodoni Moda SC", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.contract-text > p {
+    font-size: 1rem;
+    margin-bottom: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+.contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 80px;
+}
+.contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.contact-content-text {
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+.contact-content-text > a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease, 0.3s ease;
+}
+.contact-content-text > a:hover {
+    color: #E2BFD9;
+}
+
+footer {
+    background-color: #C8A1E0;
+    padding: 50px 0 20px;
+}
+.name-copyright {
+    font-size: 0.75rem;
+    padding: 20px 0;
+}
+footer > p {
+    font-size: 0.75rem;
+    padding: 5px 0;
+}
+.footer-links > a {
+    margin: 10px 20px;
+    text-decoration: none;
+    transition: 0.3s ease, 0.3s ease;
+    color: #674188;
+}
+.footer-links > a:hover {
+    color: #E2BFD9;
+}
+
+@media (min-width: 531px) and (max-width: 1200px) {
+    .navbar-contents {
+        flex-direction: column;
+        gap: 2px;
+        text-align: right;
+    }
+    .navbar-contents a {
+        font-size: 15px;
+    }
+    .front-page-container {
+        padding: 20px;
+    }
+    .projects {
+        display: block;
+    }
+    .skills-div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+    }
+}
+@media (max-width: 530px) {
+    .navbar-contents {
+        flex-direction: column;
+        gap: 2px;
+        text-align: right;
+    }
+    .navbar-contents a {
+        font-size: 10px;
+    }
+    .front-page-container {
+        padding: 20px;
+    }
+    .introduction-container {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+    .introduction-text {
+        text-align: center;
+        width: 100%;
+        margin-left: auto; 
+        margin-right: 0;
+    }
+    .introduction-container > img {
+        margin: 0;
+    }
+
+    .projects {
+        display: block;
+    }
+    .project-img {
+        width: 400px;
+        height: 200px;
+    }
+
+    .skills-div {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+    }
+    .skills-text {
+        text-align: center;
+        width: 100%;
+        padding-left: 0%;
+    }
+
+    .contact-info {
+        display: block;
+        margin-top: 50px;
+    }
+    .contact-content {
+        padding-bottom: 20px;
+    }
+}
